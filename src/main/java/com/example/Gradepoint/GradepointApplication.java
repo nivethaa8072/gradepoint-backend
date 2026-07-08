@@ -1,12 +1,13 @@
-spring.datasource.url=${DB_URL:jdbc:mysql://localhost:3306/gradepoint}
-spring.datasource.username=${DB_USERNAME}
-spring.datasource.password=${DB_PASSWORD}
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
+package com.example.Gradepoint;
 
-app.jwt.secret=ZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZm
-app.jwt.expiration-ms=86400000
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-server.port=8080
+@SpringBootApplication
+public class GradepointApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GradepointApplication.class, args);
+	}
+
+}
